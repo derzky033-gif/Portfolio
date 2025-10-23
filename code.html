@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susshie's Web - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .skill-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .project-item h3 {
+            margin-bottom: 10px;
+        }
+        .project-item a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .experience, .education {
+            list-style: none;
+        }
+        .experience li, .education li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        footer a {
+            color: #ffd700;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            .skills {
+                grid-template-columns: 1fr;
+            }
+            .contact {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 0;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            section {
+                margin: 20px 0;
+                padding: 15px;
+            }
+            .contact-item {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Derick M. Morales</h1>
+            <p>Aspiring IT Professional | BSIT 2nd Year Student</p>
+            <p>Innovating the Digital World, One Code at a Time</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contact">
+            <h2><i class="fas fa-address-book"></i> Contact Information</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>09970775378</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>derzky033@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>BSIT</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>Hey there! I'm Derick M. Morales, a passionate 2nd-year BSIT student with a knack for turning complex problems into sleek solutions. I thrive on coding, cybersecurity, and emerging tech like AI and blockchain. When I'm not debugging code, you'll find me exploring open-source projects or gaming. Let's build the future together!</p>
+        </section>
+
+        <section id="skills">
+            <h2><i class="fas fa-tools"></i> Learning Skills</h2>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>Programming Languages</h3>
+                    <p>Python, JavaScript, Java, C++</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, React, Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, Docker, Linux, AWS Basics</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Soft Skills</h3>
+                    <p>Problem-Solving, Team Collaboration, Adaptability</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Certifications</h3>
+                    <p>Google IT Support Certificate, CompTIA A+</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2><i class="fas fa-project-diagram"></i> Pending Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <h3>E-Commerce Web App</h3>
+                    <p>Built a full-stack e-commerce site using React and Node.js. Features: User authentication, payment integration, responsive design.</p>
+                    <p>Tech Stack: React, Express, MongoDB.</p>
+                    <a href="https://github.com/yourusername/project">GitHub</a> | <a href="https://yourapp.com">Live Demo</a>
+                </div>
+                <div class="project-item">
+                    <h3>Cybersecurity Tool</h3>
+                    <p>Developed a simple password strength checker with Python. Includes brute-force simulation and encryption basics.</p>
+                    <p>Tech Stack: Python, Tkinter.</p>
+                    <a href="https://github.com/yourusername/project">GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>AI Chatbot</h3>
+                    <p>Created a basic chatbot using NLP libraries for customer support.</p>
+                    <p>Tech Stack: Python, NLTK.</p>
+                    <a href="https://github.com/yourusername/project">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2><i class="fas fa-school"></i> Education</h2>
+            <ul class="education">
+                <li>
+                    <strong>Bachelor of Science in Information Technology (BSIT)</strong><br>
+                    Studied at: St. Louis Anne Colleges of San Pedro Laguna Inc.<br>
+                    Expected Graduation: 2027<br>
+                    Relevant Coursework: Data Structures, Web Development, Networking
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <ul class="experience">
+                <li>
+                    <strong></strong><br>
+
+                </li>
+                <li>
+                    <strong></strong><br>
+                    
+                </li>
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h2><i class="fas fa-trophy"></i> Achievements & Interests</h2>
+            <p><strong>Achievements:</strong> Code Compitition (2022)</p>
+            <p><strong>Interests:</strong> Open-source contributions, Ethical Hacking, Tech Blogs</p>
+            <p><strong>Hobbies:</strong> Gaming, Photography, Traveling</p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Let's Connect!</h2>
+        <p>I'm always open to collaborations, internships, or just chatting about tech. Reach out via email or phone.</p>
+        <a href="https://www.facebook.com/Susshie03/"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/susshie_03/"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@sushii425"><i class="fab fa-tiktok"></i> TikTok</a>
+        <p>Designed with 💻 passion. Last updated: 2025</p>
+    </footer>
+</body>
+</html>
